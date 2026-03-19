@@ -1,86 +1,110 @@
 export const db = [
-    {
-        id: 1,
-        nombre: 'Lukather',
-        imagen: 'guitarra_01',
-        descripcion: 'Morbi ornare augue nisl, vel elementum dui mollis vel. Curabitur non ex id eros fermentum hendrerit.',
-        precio: 299,
-    },
-    {
-        id: 2,
-        nombre: 'SRV',
-        imagen: 'guitarra_02',
-        descripcion: 'Morbi ornare augue nisl, vel elementum dui mollis vel. Curabitur non ex id eros fermentum hendrerit.',
-        precio: 349,
-    },
-    {
-        id: 3,
-        nombre: 'Borland',
-        imagen: 'guitarra_03',
-        descripcion: 'Morbi ornare augue nisl, vel elementum dui mollis vel. Curabitur non ex id eros fermentum hendrerit.',
-        precio: 329,
-    },
-    {
-        id: 4,
-        nombre: 'VAI',
-        imagen: 'guitarra_04',
-        descripcion: 'Morbi ornare augue nisl, vel elementum dui mollis vel. Curabitur non ex id eros fermentum hendrerit.',
-        precio: 299,
-    },
-    {
-        id: 5,
-        nombre: 'Thompson',
-        imagen: 'guitarra_05',
-        descripcion: 'Morbi ornare augue nisl, vel elementum dui mollis vel. Curabitur non ex id eros fermentum hendrerit.',
-        precio: 399,
-    },
-    {
-        id: 6,
-        nombre: 'White',
-        imagen: 'guitarra_06',
-        descripcion: 'Morbi ornare augue nisl, vel elementum dui mollis vel. Curabitur non ex id eros fermentum hendrerit.',
-        precio: 329,
-    },
-    {
-        id: 7,
-        nombre: 'Cobain',
-        imagen: 'guitarra_07',
-        descripcion: 'Morbi ornare augue nisl, vel elementum dui mollis vel. Curabitur non ex id eros fermentum hendrerit.',
-        precio: 349,
-    },
-    {
-        id: 8,
-        nombre: 'Dale',
-        imagen: 'guitarra_08',
-        descripcion: 'Morbi ornare augue nisl, vel elementum dui mollis vel. Curabitur non ex id eros fermentum hendrerit.',
-        precio: 379,
-    },
-    {
-        id: 9,
-        nombre: 'Krieger',
-        imagen: 'guitarra_09',
-        descripcion: 'Morbi ornare augue nisl, vel elementum dui mollis vel. Curabitur non ex id eros fermentum hendrerit.',
-        precio: 289,
-    },
-    {
-        id: 10,
-        nombre: 'Campbell',
-        imagen: 'guitarra_10',
-        descripcion: 'Morbi ornare augue nisl, vel elementum dui mollis vel. Curabitur non ex id eros fermentum hendrerit.',
-        precio: 349,
-    },
-    {
-        id: 11,
-        nombre: 'Reed',
-        imagen: 'guitarra_11',
-        descripcion: 'Morbi ornare augue nisl, vel elementum dui mollis vel. Curabitur non ex id eros fermentum hendrerit.',
-        precio: 399,
-    },
-    {
-        id: 12,
-        nombre: 'Hazel',
-        imagen: 'guitarra_12',
-        descripcion: 'Morbi ornare augue nisl, vel elementum dui mollis vel. Curabitur non ex id eros fermentum hendrerit.',
-        precio: 379,
-    },
+  {
+    id: 1,
+    name: 'Lukather',
+    image: 'guitar_01',
+    description:
+      'Morbi ornare augue nisl, vel elementum dui mollis vel. Curabitur non ex id eros fermentum hendrerit.',
+    price: 299,
+    stock: 10,
+  },
+  {
+    id: 2,
+    name: 'SRV',
+    image: 'guitar_02',
+    description:
+      'Morbi ornare augue nisl, vel elementum dui mollis vel. Curabitur non ex id eros fermentum hendrerit.',
+    price: 349,
+    stock: 5,
+  },
+  {
+    id: 3,
+    name: 'Borland',
+    image: 'guitar_03',
+    description:
+      'Morbi ornare augue nisl, vel elementum dui mollis vel. Curabitur non ex id eros fermentum hendrerit.',
+    price: 329,
+    stock: 10,
+  },
+  {
+    id: 4,
+    name: 'VAI',
+    image: 'guitar_04',
+    description:
+      'Morbi ornare augue nisl, vel elementum dui mollis vel. Curabitur non ex id eros fermentum hendrerit.',
+    price: 299,
+    stock: 7,
+  },
+  {
+    id: 5,
+    name: 'Thompson',
+    image: 'guitar_05',
+    description:
+      'Morbi ornare augue nisl, vel elementum dui mollis vel. Curabitur non ex id eros fermentum hendrerit.',
+    price: 399,
+    stock: 3,
+  },
+  {
+    id: 6,
+    name: 'White',
+    image: 'guitar_06',
+    description:
+      'Morbi ornare augue nisl, vel elementum dui mollis vel. Curabitur non ex id eros fermentum hendrerit.',
+    price: 329,
+    stock: 6,
+  },
+  {
+    id: 7,
+    name: 'Cobain',
+    image: 'guitar_07',
+    description:
+      'Morbi ornare augue nisl, vel elementum dui mollis vel. Curabitur non ex id eros fermentum hendrerit.',
+    price: 349,
+    stock: 10,
+  },
+  {
+    id: 8,
+    name: 'Dale',
+    image: 'guitar_08',
+    description:
+      'Morbi ornare augue nisl, vel elementum dui mollis vel. Curabitur non ex id eros fermentum hendrerit.',
+    price: 379,
+    stock: 2,
+  },
+  {
+    id: 9,
+    name: 'Krieger',
+    image: 'guitar_09',
+    description:
+      'Morbi ornare augue nisl, vel elementum dui mollis vel. Curabitur non ex id eros fermentum hendrerit.',
+    price: 289,
+    stock: 9,
+  },
+  {
+    id: 10,
+    name: 'Campbell',
+    image: 'guitar_10',
+    description:
+      'Morbi ornare augue nisl, vel elementum dui mollis vel. Curabitur non ex id eros fermentum hendrerit.',
+    price: 349,
+    stock: 7,
+  },
+  {
+    id: 11,
+    name: 'Reed',
+    image: 'guitar_11',
+    description:
+      'Morbi ornare augue nisl, vel elementum dui mollis vel. Curabitur non ex id eros fermentum hendrerit.',
+    price: 399,
+    stock: 10,
+  },
+  {
+    id: 12,
+    name: 'Hazel',
+    image: 'guitar_12',
+    description:
+      'Morbi ornare augue nisl, vel elementum dui mollis vel. Curabitur non ex id eros fermentum hendrerit.',
+    price: 379,
+    stock: 4,
+  },
 ]

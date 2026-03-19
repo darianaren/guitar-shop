@@ -7,17 +7,25 @@
 
   const guitars = ref([])
   const cart = ref([])
+  const guitar = ref({})
 
   onMounted(() => {
     guitars.value = db
+    guitar.value = guitars.value[3]
   })
 
   const addItem = (guitar) => {
+    if (guitar.stock === 0) return
+
     const itemExists = cart.value.find((item) => item.id === guitar.id)
+
     if (itemExists) {
+      if (guitar.stock === itemExists.amount) return
+
       itemExists.amount++
       return
     }
+
     guitar.amount = 1
     cart.value.push(guitar)
   }
@@ -49,6 +57,7 @@
 <template>
   <Header
     :cart="cart"
+    :guitar="guitar"
     @delete-item="deleteItem"
     @remove-item="removeItem"
     @add-item="addItem"
