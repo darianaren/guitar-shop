@@ -1,5 +1,5 @@
 <script setup>
-  import { ref, onMounted } from 'vue'
+  import { ref, onMounted, watch } from 'vue'
   import { db } from './data/guitars'
   import Guitar from './components/Guitar.vue'
   import Header from './components/Header.vue'
@@ -12,7 +12,24 @@
   onMounted(() => {
     guitars.value = db
     guitar.value = guitars.value[3]
+    const cartLocalStorage = localStorage.getItem('cart')
+    if (cartLocalStorage) {
+      const cartSaved = JSON.parse(cartLocalStorage)
+      cartSaved.forEach((item) => {
+        const guitarSaved = guitars.value.find((guitar) => guitar.id === item.id)
+        if (guitarSaved) {
+          guitarSaved.amount = item.amount
+          cart.value.push(guitarSaved)
+        }
+      })
+    }
   })
+
+  const saveLocalStorage = () => {
+    localStorage.setItem('cart', JSON.stringify(cart.value))
+  }
+
+  watch(cart, saveLocalStorage, { deep: true })
 
   const addItem = (guitar) => {
     if (guitar.stock === 0) return

@@ -1,5 +1,49 @@
-# Vue 3 + Vite
+# Guitar Store
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+Aplicación web desarrollada como proyecto de práctica con Vue 3.
 
-Learn more about IDE Support for Vue in the [Vue Docs Scaling up Guide](https://vuejs.org/guide/scaling-up/tooling.html#ide-support).
+![Vista previa de GuitarLA: banner con guitarra eléctrica naranja modelo VAI](public/img/readme-image.png)
+
+## Descripción
+
+Este proyecto simula una tienda de guitarras y fue creado como parte del aprendizaje práctico del curso de Udemy:
+
+**Vue.js 3 - La Guía Completa - Composition Pinia MEVN 10 Apps**  
+Instructor: **Juan Pablo De la Torre Valdez**
+
+## Tecnologías utilizadas
+
+- Vue 3
+- Vite
+- JavaScript
+- CSS
+
+## Instalación y ejecución
+
+1. Instala dependencias:
+
+```bash
+npm install
+```
+
+2. Inicia el servidor de desarrollo:
+
+```bash
+npm run dev
+```
+
+3. Genera la versión de producción:
+
+```bash
+npm run build
+```
+
+4. Previsualiza la build:
+
+```bash
+npm run preview
+```
+
+## Objetivo del proyecto
+
+Practicar conceptos de Vue 3 como componentes, props, estado y flujo de datos en una aplicación tipo e-commerce.
